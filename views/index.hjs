@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+
+
+        <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+        <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+        <script type="application/javascript" src="/javascripts/vendor/jquery.min.js"></script>
+        <script type="application/javascript" src="/javascripts/vendor/chart.min.js"></script>
+        <script type="application/javascript" src="/javascripts/vendor/tablesorter.min.js"></script>
+        <script type="application/javascript" src="/javascripts/vendor/toolkit.min.js"></script>
+        <script type="application/javascript" src="/javascripts/app.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="gf aol">
+                    <nav class="aos">
+                        <div class="aom">
+                            <button class="amx amy aon" type="button" data-toggle="collapse" data-target="#nav-toggleable-sm">
+                                <span class="ct">Toggle nav</span>
+                            </button>
+                            <a class="aoo cn" href="/">
+                                <span class="fa fa-soundcloud fa-2x"></span>
+                            </a>
+                        </div>
+
+                        <div class="collapse anc" id="nav-toggleable-sm">
+                            <ul class="nav og nav-stacked">
+                                <li class="tp">Soundcloud Downloader</li>
+                                <li class="active">
+                                    <a href="/">Search</a>
+                                </li>
+                            </ul>
+                            <hr class="rx akx">
+                        </div>
+                    </nav>
+                </div>
+                <div class="hd apr">
+                    <div class="aoz">
+                        <div class="apa">
+                            <h2 class="apb">Search</h2>
+                        </div>
+                    </div>
+
+                    <div class="akf ud">
+                        <div class="akg">
+                            <div class="sc-search-container has-feedback">
+                                <input id="sc-search" type="text" class="form-control" placeholder="Search on Soundcloud">
+                                <i class="fa fa-spinner fa-pulse fa-input-inline search-indicator hide"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uc">
+                        <div class="eg">
+                            <table class="cl" data-sort="table">
+                                <thead>
+                                    <tr>
+                                        <th width="30"><input type="checkbox" class="aqi" id="select-all"></th>
+                                        <th>Song</th>
+                                        <th width="80">Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" class="aqj"></td>
+                                        <td>Some song name</td>
+                                        <td>3.57 mb</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="aqj"></td>
+                                        <td>Some song name</td>
+                                        <td>3.57 mb</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="db">
+                        <ul class="ox">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
