@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "babel-node ./bin/www"
   },
   "dependencies": {
     "babel": "^5.8.23",
@@ -17,6 +17,7 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+    "babel-node-debug": "^1.1.0",
     "bower": "^1.5.2",
     "grunt": "^0.4.5"
   }

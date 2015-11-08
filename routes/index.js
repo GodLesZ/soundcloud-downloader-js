@@ -1,24 +1,31 @@
 "use strict";
 
-var express = require('express');
-var router  = express.Router();
+import express from 'express';
+import SoundcloudLoader from '../lib/soundcloud-loader.js';
 
-router.get('/', function (req, res, next) {
+let router   = express.Router();
+let scLoader = new SoundcloudLoader();
+
+router.get('/', (req, res, next) => {
     res.render('index', {title: 'Express'});
 });
 
-router.get('/searchSongs', function(req, res, next) {
-    var foundSongs = [
-        {
-            name: 'test 1',
-            size: 1337
-        },
-        {
-            name: 'test 2',
-            size: 1337
-        }
-    ];
-    res.json(foundSongs);
+router.get('/searchSongs', (req, res, next) => {
+    if (!req.query || !req.query.term) {
+        res.status(404).send('Missing search query');
+        return;
+    }
+
+    scLoader
+        .request(req.query.term)
+        .then((err, result) => {
+            if (err) {
+                res.status(404).send(err);
+                return;
+            }
+
+            res.json(result);
+        });
 });
 
 module.exports = router;
